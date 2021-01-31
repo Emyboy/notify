@@ -1,16 +1,20 @@
 import React from 'react'
-import { Button } from 'rsuite'
+import { Button } from 'primereact/button'
 import FloatingBtn from '../components/FloatingBtn'
 import Header from '../components/Header'
+import Layout from '../components/Layout'
 
 export default function index() {
 	// console.log(process.env)
 	return (
-		<div>
-			<Header />
+		<Layout>
 			<FloatingBtn />
-			<h1>Hi</h1>
+			<h1>lorem</h1>
 			<Button>Click Me</Button>
-		</div>
+			<Button>+</Button>
+		</Layout>
+		// <div>
+		// 	<Header />
+		// </div>
 	)
 }

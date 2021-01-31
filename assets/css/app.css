@@ -2,15 +2,23 @@
     --primary-color: #FBBC04;
 }
 #__next  {
-    background-color: rgb(248, 245, 252);
+    background-color: #f8f6f1;
+    height: 100vh;
 }
-
+#app{
+    padding: 10px;
+    padding-top: 60px;
+}
 button{
     background-color: var(--primary-color);
 }
 
+nav{
+    position: fixed;
+    width: 100%;
+}
 nav svg{
-    font-size: 70px;
+    font-size: 50px;
     padding: 5px;
 }
 nav img {
@@ -18,11 +26,19 @@ nav img {
 }
 nav input {
     margin: 5px !important;
+    height: '20px'
 }
 
 .foating-btn{
     background-color: var(--primary-color) !important;
-    position:absolute;
-	/* top:10px;
-	left:940px; */
+    position:fixed;
+    color: black;
+    /* font-size: 40px; */
+    border: none !important;
+    bottom: 20px;
+    right: 20px;
+    display:block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
 }

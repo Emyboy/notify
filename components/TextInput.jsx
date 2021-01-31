@@ -1,8 +1,8 @@
 import React from 'react'
-import { Input } from 'rsuite'
+import { InputText } from 'primereact/inputtext';
 
 export default function TextInput() {
     return (
-        <Input style={{ width: '100%'}} />
+        <InputText style={{ width: '100%'}} />
     )
 }
