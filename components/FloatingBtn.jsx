@@ -24,7 +24,7 @@ export default class Confirm extends React.Component {
                 </ButtonToolbar>
 
                 <Modal backdrop="static" show={this.state.show} onHide={this.close} size="xs">
-                    <h1>working</h1>
+                    
                 </Modal>
             </div>
         );
