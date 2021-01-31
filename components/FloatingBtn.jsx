@@ -13,11 +13,8 @@ export default function FloatingBtn() {
             ...state,
             show: !state.show
         })}>
-            <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
-            </Modal.Header>
             <Modal.Body>
-                <div className='card p-5'>
+                <div className=''>
                         Woohoo, you're reading this text in a modal!
                 </div>
             </Modal.Body>
