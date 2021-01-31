@@ -9,7 +9,7 @@ export default function FloatingBtn() {
     })
     return (
         <>
-        {/* <Modal show={state.show} onHide={() => setState({
+        <Modal show={state.show} onHide={() => setState({
             ...state,
             show: !state.show
         })}>
@@ -21,7 +21,7 @@ export default function FloatingBtn() {
                         Woohoo, you're reading this text in a modal!
                 </div>
             </Modal.Body>
-        </Modal> */}
+        </Modal>
             <Button className='foating-btn shadow' onClick={() => setState({
                 ...state,
                 show: !state.show

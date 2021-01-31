@@ -2,8 +2,8 @@
     --primary-color: #FBBC04;
 }
 #__next  {
-    background-color: #f8f6f1;
-    height: 100vh;
+    background-color: #f5f3ec;
+    height: 100%;
 }
 #app{
     padding: 10px;
@@ -17,6 +17,7 @@ button{
 nav{
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 nav svg{
     font-size: 50px;
