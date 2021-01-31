@@ -8,6 +8,7 @@
 #app{
     padding: 10px;
     padding-top: 60px;
+    padding-bottom: 30px;
 }
 button{
     background-color: var(--primary-color);
@@ -41,4 +42,9 @@ nav input {
   height: 60px;
   width: 60px;
   border-radius: 50%;
+  z-index: 100;
+}
+
+.each-note{
+    border-radius: 15px;
 }

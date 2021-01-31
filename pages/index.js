@@ -20,6 +20,10 @@ export default function index() {
 					<EachNote />
 					<EachNote />
 					<EachNote />
+					<EachNote />
+					<EachNote />
+					<EachNote />
+					<EachNote />
 				</div>
 			</div>
 
