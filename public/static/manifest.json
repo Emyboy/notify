@@ -1,0 +1,26 @@
+{
+  "name": "Notify",
+  "short_name": "Notify",
+  "icons": [
+    {
+      "src": "img/chrome/chrome-extensionmanagementpage-48-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "img/chrome/chrome-installprocess-128-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "img/chrome/chrome-favicon-16-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#FBBC04",
+  "background_color": "#FBBC04"
+}
