@@ -1,22 +1,19 @@
 import React, { useState } from 'react'
 import { Sidebar } from 'primereact/sidebar';
-import { SlideMenu } from 'primereact/slidemenu';
+import { Menu } from 'primereact/menu';
 
 export default function Drawer({
     show,
     toggle
 }) {
-    const items = [
-        {
-            label: 'File',
-            icon: 'pi pi-fw pi-file',
-            items: []
-        }
-    ]
+    let items = [
+        { label: 'New', icon: 'pi pi-fw pi-plus' },
+        { label: 'Delete', icon: 'pi pi-fw pi-trash' }
+    ];
     return (
         <Sidebar visible={show} onHide={toggle}>
-            Content
-            <SlideMenu style={{ width: '100%', margin: 0 }} model={items} />
+            Menu
+            <Menu model={items} style={{ margin: 0, width: '100%', border: 0 }} />
         </Sidebar>
     )
 }

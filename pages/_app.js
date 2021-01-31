@@ -4,7 +4,7 @@ import Head from 'next/head'
 import App from 'next/app'
 import 'primereact/resources/themes/saga-blue/theme.css'
 import 'primereact/resources/primereact.min.css'
-// import 'primeicons/primeicons.css'
+import 'primeicons/primeicons.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'rsuite/dist/styles/rsuite-default.css';
 import '../assets/css/app.css';
