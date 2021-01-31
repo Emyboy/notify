@@ -8,6 +8,10 @@ import 'primeicons/primeicons.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'rsuite/dist/styles/rsuite-default.css';
 import '../assets/css/app.css';
+import { Provider } from 'react-redux'
+import { applyMiddleware, createStore } from 'redux'
+import rootReducer from '../redux/reducer/root.reducer'
+import thunk from 'redux-thunk'
 // import { createMuiTheme } from '@material-ui/core/styles'
 // import { ThemeProvider } from '@material-ui/styles'
 // import CssBaseline from '@material-ui/core/CssBaseline'
@@ -33,32 +37,12 @@ export default class MyApp extends App {
 
 	render() {
 		const { Component, pageProps } = this.props
-
-		// const theme = createMuiTheme({
-		// 	palette: {
-		// 		background: {
-		// 			default: '#EEE',
-		// 		},
-		// 		primary: {
-		// 			main: '#673ab7',
-		// 		},
-		// 	},
-		// })
-
+		const store = createStore(rootReducer, applyMiddleware(thunk))
 		return (
 			<>
-				{/* <Head>
-					<title>Todo App</title>
-					<meta
-						name="viewport"
-						content="width=device-width, initial-scale=1.0"
-					/>
-				</Head> */}
-				{/* <ThemeProvider theme={theme}> */}
-					{/* <CssBaseline> */}
-						<Component {...pageProps} />
-					{/* </CssBaseline> */}
-				{/* </ThemeProvider> */}
+				<Provider store={store}>
+					<Component {...pageProps} />
+				</Provider>
 			</>
 		)
 	}
