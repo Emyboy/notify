@@ -7,6 +7,7 @@ import EachNote from '../components/EachNote'
 import EachCategory from '../components/EachCategory'
 import { connect } from 'react-redux'
 import {  createNote } from '../redux/action/note.action';
+import Head from 'next/head'
 
 const mapStateToProps = state => ({
 	note: state.note
@@ -23,9 +24,12 @@ export default connect(
 	// console.log(process.env)
 	return (
 		<Layout>
+			<Head>
+				<title>Notify</title>
+			</Head>
 			<FloatingBtn />
-			<EachCategory category='Important' />
 			<div class="container">
+			<EachCategory category='Important' />
 				<div class="row" style={{ justifyContent: 'center' }}>
 					{
 						props.note.notes.map((val, i) => {
