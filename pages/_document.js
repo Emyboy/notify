@@ -7,7 +7,6 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en-GB">
 				<Head>
-					<title>Notify</title>
 					<meta name="theme-color" content="#FBBC04" />
 					<meta
 						name="Description"
@@ -19,7 +18,7 @@ class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 					/>
-					{/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" /> */}
+					<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
 				</Head>
 				<body>
 					<Main />
@@ -54,12 +53,12 @@ MyDocument.getInitialProps = async (ctx) => {
 	// 4. page.render
 
 	// Render app and page and get the context of the page with collected side effects.
-	const sheets = new ServerStyleSheets()
+	// const sheets = new ServerStyleSheets()
 	const originalRenderPage = ctx.renderPage
 
 	ctx.renderPage = () =>
 		originalRenderPage({
-			enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
+			// enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
 		})
 
 	const initialProps = await Document.getInitialProps(ctx)
@@ -70,7 +69,7 @@ MyDocument.getInitialProps = async (ctx) => {
 		styles: [
 			<React.Fragment key="styles">
 				{initialProps.styles}
-				{sheets.getStyleElement()}
+				{/* {sheets.getStyleElement()} */}
 			</React.Fragment>,
 		],
 	}
