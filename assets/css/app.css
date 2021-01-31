@@ -1,6 +1,9 @@
 :root{
     --primary-color: #FBBC04;
 }
+html{
+    background-color: #f5f3ec;
+}
 #__next  {
     background-color: #f5f3ec;
     height: 100vh;
